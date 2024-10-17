@@ -1,0 +1,105 @@
+.admain-div {
+  width: 200vh;
+  height: 95vh;
+  display: flex;
+  padding-top: 60px;
+  flex-direction: row;
+}
+
+.ADM-left {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(38, 18, 57);
+  gap: 2px;
+}
+
+.Profile-span {
+  height: 12%;
+  background-color: rgb(53, 17, 87);
+  display: flex;
+  justify-content: center;
+}
+
+.ADM-left ul {
+  height: 80%;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  margin: 0px;
+  margin-left: -40px;
+  /* padding: 0px 5px; */
+}
+
+.ADM-left ul li {
+  text-align: left;
+  padding-left: 5px;
+  list-style: none;
+  margin: 0px;
+  height: 40px;
+  cursor: pointer;
+  background-color: rgb(69, 23, 112);
+}
+
+.ADM-left ul li:hover {
+  background-color: blueviolet;
+}
+
+.ADM-right {
+  width: 85%;
+  padding-left: 20px;
+}
+
+.ADM-rboxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  /* padding: 10px; */
+}
+
+.ADM-rboxes span {
+  border: 1px solid black;
+  height: 90px;
+  background-color: yellowgreen;
+}
+
+.ADM-rtable {
+  background-color: rgb(50, 47, 47);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.ADMT-lu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.ADMT-lu .SF-span {
+  /* background-color: violet; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+.SF-span span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.ADMT-lb th,
+td {
+  padding: 15px;
+  text-align: left;
+  width: 140vh;
+  border-bottom: 1px solid #4b4a4a;
+}

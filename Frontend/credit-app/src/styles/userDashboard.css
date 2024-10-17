@@ -1,0 +1,255 @@
+.userDB-mainDiv {
+  width: 120vh;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-left: 320px;
+}
+
+.userDB-centerDiv {
+  width: 74%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 10px;
+  /* background-color: yellowgreen; */
+  margin-left: 110px;
+}
+
+.userDB-centerDiv .udbcenter-upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100;
+}
+
+.upper-right {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.first {
+  font-size: 50px;
+  padding: 5px;
+  color: rgb(130, 67, 193);
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 5px;
+}
+
+.second p {
+  font-size: 12px;
+  margin: 0;
+  color: #ddd;
+}
+
+.second .sign {
+  font-size: 20px;
+  color: rgb(201, 72, 237);
+  margin-right: 5px;
+  margin-bottom: 15px;
+}
+
+.second span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.second span p {
+  font-size: 28px;
+  margin: 0;
+}
+
+.third {
+  display: flex;
+  justify-content: end;
+}
+
+.third button {
+  background-color: rgb(130, 67, 193);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.third button:hover {
+  background-color: rgb(110, 47, 173);
+}
+
+.userDB-lowerDiv {
+  margin-top: 5px;
+  width: 70%;
+  padding: 20px;
+  /* background-color: #333; */
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.userDB-lowerDiv {
+  display: flex;
+  flex-direction: column;
+  width: 130vh;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.userDB-lowerDiv .UDBlower-upper {
+  width: 78%;
+  /* background-color: brown; */
+  display: flex;
+  gap: 1px;
+  border-radius: 5px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.UDBlower-upper button {
+  border-radius: 0%;
+  width: 40%;
+}
+
+.UDBlower-upper button:hover {
+  border-color: rgb(110, 47, 173);
+}
+
+.UDBlower-center {
+  /* background-color: yellowgreen; */
+  width: 78%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.UDBlower-center input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+  color: #ddd;
+}
+
+.UDBlower-lower {
+  background-color: rgb(48, 47, 48);
+  width: 140vh;
+  border-radius: 5px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.UDBL-lu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+.UDBL-lu .SF-span {
+  /* background-color: violet; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+.SF-span span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.UDBL-lb th,
+td {
+  padding: 15px;
+  text-align: left;
+  width: 140vh;
+  border-bottom: 1px solid #4b4a4a;
+}
+
+.wrapper.blurred {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.loanform {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: rgb(39, 38, 39);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.modal-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-form form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.modal-form form p {
+  font-size: 13px;
+}
+
+.modal-form form input {
+  height: 30px;
+  width: 250px;
+}
+
+.modal-form form button {
+  height: 45px;
+  width: 100px;
+  margin-top: 120px;
+  margin-left: -70px;
+}
+
+.cancelBtn {
+  margin-left: -30px;
+}
