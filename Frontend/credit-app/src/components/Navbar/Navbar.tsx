@@ -20,9 +20,12 @@ const Navbar = () => {
 
   const handleClick = async () => {
     try {
-      await axios.post("http://localhost:8000/api/v1/users/logout", {
-        withCredentials: true,
-      });
+      await axios.post(
+        "https://credit-app-v1.onrender.com/api/v1/users/logout",
+        {
+          withCredentials: true,
+        }
+      );
       console.log("Logout successful");
       navigate("/login");
     } catch (error) {

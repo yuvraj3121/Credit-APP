@@ -26,9 +26,12 @@ const AdminDashboard = () => {
 
   const handleSignOut = async () => {
     try {
-      await axios.post("http://localhost:8000/api/v1/users/logout", {
-        withCredentials: true,
-      });
+      await axios.post(
+        "https://credit-app-v1.onrender.com/api/v1/users/logout",
+        {
+          withCredentials: true,
+        }
+      );
       console.log("signout successful");
       navigate("/login");
     } catch (error) {
@@ -39,7 +42,7 @@ const AdminDashboard = () => {
   const fetchAllLoans = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/loans/allLoans`,
+        `https://credit-app-v1.onrender.com/api/v1/loans/allLoans`,
         { withCredentials: true }
       );
       console.log("user loans fetched successfully:", res.data.userLoans);

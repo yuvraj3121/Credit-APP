@@ -72,7 +72,7 @@ const UserDashboard = () => {
 
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/loans/applyForLoan/${user?.id}`,
+        `https://credit-app-v1.onrender.com/api/v1/loans/applyForLoan/${user?.id}`,
         {
           fullname,
           amount,
@@ -114,7 +114,7 @@ const UserDashboard = () => {
   const fetchUserLoans = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:8000/api/v1/loans/userLoans/${user?.id}`,
+        `https://credit-app-v1.onrender.com/api/v1/loans/userLoans/${user?.id}`,
         { withCredentials: true }
       );
       console.log("user loans fetched successfully:", res.data.userLoans);
